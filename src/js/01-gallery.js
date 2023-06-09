@@ -1,9 +1,8 @@
 // Add imports above this line
 import { galleryItems } from './gallery-items';
-// Change code below this line
 import SimpleLightbox from "simplelightbox";
-
-console.log(galleryItems);
+import "simplelightbox/dist/simple-lightbox.min.css"
+// Change code below this line
 
 const listGallery = document.querySelector('.gallery')
 
@@ -22,11 +21,15 @@ const markupGallery = galleryItems.map(({ preview, original, description }) => {
 
 listGallery.insertAdjacentHTML('afterbegin', markupGallery)
 
+new SimpleLightbox('.gallery a', {
+  navText: ['<', '>'],
+  captionsData: 'alt',
+  captionDelay: 250,
+})
 
 
-// new simpleLightbox('.gallery a', {
-//   navText: ['<', '>'],
-//   captionsData: 'alt',
-//   captionDelay: 250,
-// })
+
+
+
+
 
