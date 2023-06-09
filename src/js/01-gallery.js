@@ -22,9 +22,10 @@ const markupGallery = galleryItems.map(({ preview, original, description }) => {
 listGallery.insertAdjacentHTML('afterbegin', markupGallery)
 
 new SimpleLightbox('.gallery a', {
-  navText: ['<', '>'],
+  navText: ['&#8656', '&#8658'],
   captionsData: 'alt',
   captionDelay: 250,
+  
 })
 
 
