@@ -5,41 +5,6 @@ import SimpleLightbox from "simplelightbox";
 
 console.log(galleryItems);
 
-
-
-console.log(SimpleLightbox);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const simpleLightbox = require('simplelightbox');
-// import simpleLightbox from "simplelightbox";
-
-
-
 const listGallery = document.querySelector('.gallery')
 
 const markupGallery = galleryItems.map(({ preview, original, description }) => {
